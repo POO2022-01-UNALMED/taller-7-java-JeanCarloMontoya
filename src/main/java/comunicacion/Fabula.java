@@ -1,12 +1,12 @@
 package comunicacion;
 
 public class Fabula extends Escrito {
-	private String enseñanza;
+	private String ensenanza;
 	private String interpretacion;
 	
 	public Fabula(String origen, String titulo, String autor, int paginas,String e,String i){
 		super(origen,titulo,autor,paginas);
-		enseñanza=e;
+		ensenanza=e;
 		interpretacion=i;}
 	
 	public int palabrasTotales(int i) {
@@ -17,15 +17,15 @@ public class Fabula extends Escrito {
 	}
 	public String toString() {
 		String c=this.resumen()+"\n"
-				+enseñanza;
+				+ensenanza;
 		return c;}
 
 	public String getEnsenanza() {
-		return enseñanza;
+		return ensenanza;
 	}
 
-	public void setEnsenanza(String enseñanza) {
-		this.enseñanza = enseñanza;
+	public void setEnsenanza(String ensenanza) {
+		this.ensenanza = ensenanza;
 	}
 
 	public String getInterpretacion() {
